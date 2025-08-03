@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}Dashboard{% endblock %}
+{% block content %}
+<h2 class="text-center">Upload Medical Record</h2>
+<form method="POST" enctype="multipart/form-data">
+    <div class="mb-3">
+        <label for="file" class="form-label">Upload Medical Record (Text: txt, pdf, doc, docx; Images: jpg, jpeg, png, dcm; Audio: mp3, wav; Video: mp4, avi)</label>
+        <input type="file" class="form-control" id="file" name="file" accept=".txt,.pdf,.doc,.docx,.jpg,.jpeg,.png,.dcm,.mp3,.wav,.mp4,.avi" required>
+    </div>
+    <button type="submit" class="btn btn-primary w-100">Upload</button>
+</form>
+{% endblock %}
